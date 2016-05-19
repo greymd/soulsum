@@ -1,0 +1,2 @@
+# soulsum
+Calculate "Soul Number"
