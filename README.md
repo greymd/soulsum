@@ -1,7 +1,7 @@
 # soulsum
 Calculate "Soul Number".
 
-<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">$BA0$b(BTwitter$B$GN.$l$F$?$1$I(B<br>$B$3$l?t;z$,6a$$?M$O(B<br>$BAj@-$,$$$s$@$C$F$h!A!A(B<br>$B?t;z$,F1$8?M$O:G9b$J$s$@$C$F!A!A(B<br>$B%>%C$H$9$kOC$G$d$C$F$?!A!A(B<br>$B26!"(B4$B$@$+$iF1$8?M$+(B<br>$B6a$$?MC/$+$J!A!A!A!A!A!A(B <a href="https://t.co/jUC1uP9AnD">pic.twitter.com/jUC1uP9AnD</a></p>&mdash; $B%D%$%C%?!<B.Js(B (@twi_carnival) <a href="https://twitter.com/twi_carnival/status/732782289604612096">2016$BG/(B5$B7n(B18$BF|(B</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">前もTwitterで流れてたけど<br>これ数字が近い人は<br>相性がいんだってよ〜〜<br>数字が同じ人は最高なんだって〜〜<br>ゾッとする話でやってた〜〜<br>俺、4だから同じ人か<br>近い人誰かな〜〜〜〜〜〜 <a href="https://t.co/jUC1uP9AnD">pic.twitter.com/jUC1uP9AnD</a></p>&mdash; ツイッター速報 (@twi_carnival) <a href="https://twitter.com/twi_carnival/status/732782289604612096">2016年5月18日</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Install
