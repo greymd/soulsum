@@ -2,16 +2,8 @@
 int64_t getSoulNum (int64_t num);
 
 int64_t getSoulNum (int64_t num) {
-	int64_t _num = num;
-	int64_t _s;
-	do {
-		_s=0;
-		for (int64_t m = _num; m > 0; m/=10) {
-			_s += m % 10;
-		}
-		_num = _s;
-	} while (_s >= 10);
-	return _s;
+	int result = num % 9;
+	return result == 0 ? 9 : result;
 }
 
 
