@@ -1,7 +1,5 @@
 language: c++
 
-compiler: g++
-
 deploy:
     provider: releases
     api_key: $GITHUB_TOKEN
