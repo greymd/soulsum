@@ -16,8 +16,7 @@ script:
 
 deploy:
     provider: releases
-    api_key:
-        secure: $GITHUB_AUTH
+    api_key: $GITHUB_AUTH
     file_glob: true
     file: soulsum_*.tar.gz
     overwrite: true
