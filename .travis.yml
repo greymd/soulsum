@@ -6,12 +6,13 @@ matrix:
         - os: osx
 
 before_install:
-    - rvm get stable --auto-dotfiles
+    - if [ $TRAVIS_OS_NAME = osx ]; then rvm get head; fi
 
 script:
     - make
-    - fname=$(echo "soulsum_$(uname)_$(uname -m)" | sed 's/./\l&/g' | tr -dc 'a-z0-9._')
+    - fname=$(echo "soulsum_$(uname)_$(uname -m)" | tr '[:upper:]' '[:lower:]' | tr -dc 'a-z0-9._')
     - tar -zcvf "${fname}.tar.gz" soulsum
+    - echo "Deploy ${fname}.tar.gz"
 
 deploy:
     provider: releases
@@ -21,5 +22,5 @@ deploy:
     file: soulsum_*.tar.gz
     overwrite: true
     skip_cleanup: true
-    on:
-        tags: true
+    #    on:
+    #        tags: true
