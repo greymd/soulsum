@@ -9,7 +9,7 @@ before_install:
 
 script:
     - make
-    - fname=$(echo "soulsum_$(uname)_$(uname -m)" | sed 's/./\l&/g' | tr -dc 'a-z0-9._')
+    - fname=$(echo "soulsum_$(uname)_$(uname -m)" | tr '[:upper:]' '[:lower:]' | tr -dc 'a-z0-9._')
     - tar -zcvf "${fname}.tar.gz" soulsum
     - echo "Deploy ${fname}.tar.gz"
 
