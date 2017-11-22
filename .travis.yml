@@ -20,4 +20,4 @@ deploy:
     overwrite: true
     skip_cleanup: true
     on:
-        repo: greymd/soulsum
+        tags: true
