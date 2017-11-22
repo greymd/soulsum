@@ -2,6 +2,9 @@ language: c++
 
 script:
     - make
+    - fname=$(echo "soulsum_$(uname)_$(uname -m)" | sed 's/./\l&/g' | tr -dc 'a-z0-9._')
+    - tar -zcvf ${fname}.tar.gz soulsum
+    - rm soulsum
 
 deploy:
     provider: releases
@@ -9,4 +12,5 @@ deploy:
         secure: "Fx9bET573tuhbsr7l2gFBVpwYxQD0u+9Dhs/uhafUSIutsIWa7DRfnfL5yH76eXX60OScfYuqMSGnY4h0dZYyL/xd5R5uy2nCpTOevdfF2/8SwI0zr7Cwhdf9z8Q4iCEVRS3Eeb0W4BqQAGWBPCl5/BA8+YA9LKpSdLXavM/6zQcpqtQa5A+rztdSnAfo7Mm0DDeaJEaeNlxwdgWKcRKEakFiRrAFmiUfof7JoBcj6gbp/CMb3y6LAKbjjEvp9su9v7dMGpaqhspwVUF0Y2yQno/+2IPA7ZeSIVNPSIVaBwCdF5JNgvmslNiApXi2lxTzsWsddAe2ZbOC4SOxcLxmzkXwSEPd1YLHdGwCY/0TsWvhAur/AyIZR7zX/a1P/1rc7gUmbLG8pUjJFVdHtdQz0Mhb41sp9HqeUFyxAOTIT8SMkS5ilJf4nTFLW6NQ5OBAc4FrX9bJW74BIkBT7WQLNM1RV2+8l8qORMrLV8KjEKMaLBZpNlsZOQH4F/LbDKtM0fH7cUeSAk4Hgd36nGds3CEE9zw/WMAWj7q8UElr0w0V9wrrG1p3euYb+w/2hymgG/HYg9g8zx8q3wV1CDGcqLCmVBRAP6EPDX+htkW8ady9jCqd85NLh3J3uc2nl6QGv4GDmrWs5zgfE16C0eKkOUmcORYklo0kfBJYquyH6I="
     file: soulnum
     on:
+        repo: greymd/soulsum
         tags: true
