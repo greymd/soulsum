@@ -14,7 +14,6 @@ deploy:
     file: soulsum_*.tar.gz
     on:
         repo: greymd/soulsum
-        tags: true
 after_deploy:
     - make clean
     - rm "${fname}.tar.gz"
