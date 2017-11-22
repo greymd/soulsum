@@ -6,7 +6,6 @@ int64_t getSoulNum (int64_t num) {
 	return result == 0 ? 9 : result;
 }
 
-
 int main(int argc, char const* argv[])
 {
 	int64_t num;
@@ -21,4 +20,3 @@ int main(int argc, char const* argv[])
 	}
 	return 0;
 }
-
