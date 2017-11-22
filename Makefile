@@ -8,7 +8,7 @@ RM?=	rm -f
 INSTALL_PROGRAM=${INSTALL} -m ${BINMODE}
 BINMODE=	755
 
-all: soulsum
+all:
 	g++ ./soulsum.cpp -std=c++11 -O3 -o soulsum
 
 clean:
