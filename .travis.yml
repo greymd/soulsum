@@ -4,6 +4,9 @@ matrix:
     include:
         - os: osx
 
+before_install:
+    - rvm get stable --auto-dotfiles
+
 script:
     - make
     - fname=$(echo "soulsum_$(uname)_$(uname -m)" | sed 's/./\l&/g' | tr -dc 'a-z0-9._')
