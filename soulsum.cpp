@@ -1,5 +1,6 @@
 #include <iostream>
-char const* version_string = "v1.5";
+#include <string.h>
+char const* version_string = "v1.5.1";
 int64_t getSoulNum (int64_t num);
 
 int64_t getSoulNum (int64_t num) {
